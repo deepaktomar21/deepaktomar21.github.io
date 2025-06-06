@@ -69,7 +69,7 @@
       color: var(--accent);
     }
 
-    .about, .skills, .projects, .contact {
+    .about, .skills, .projects, .contact, .experience {
       background-color: var(--card-bg-light);
       margin-bottom: 2rem;
       padding: 2rem;
@@ -81,7 +81,8 @@
     body.dark .about,
     body.dark .skills,
     body.dark .projects,
-    body.dark .contact {
+    body.dark .contact,
+    body.dark .experience {
       background-color: var(--card-bg-dark);
     }
 
@@ -161,10 +162,21 @@
     .contact p {
       margin-bottom: 0.5rem;
     }
+
+    .experience-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-item h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-item p {
+      margin-bottom: 0.25rem;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Deepak Tomar</h1>
     <p>Back-End Developer | Laravel Specialist</p>
@@ -173,7 +185,29 @@
 
   <section class="about" data-aos="fade-up">
     <h2 class="section-title">About Me</h2>
-    <p>Hello! I am Deepak Tomar, a Laravel developer with 2+ years of experience in back-end development. I specialize in building web applications with clean architecture and robust functionality. I'm passionate about writing efficient, scalable code and constantly learning new technologies.</p>
+    <p>Hello! I am Deepak Tomar, a Laravel developer with experience in back-end development. I specialize in building web applications with clean architecture and robust functionality. I'm passionate about writing efficient, scalable code and constantly learning new technologies.</p>
+  </section>
+
+  <section class="experience" data-aos="fade-up">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-item">
+      <h3>Laravel Back-End Developer</h3>
+      <p><strong>InfoCentroid Software Solution, Indore</strong> | Remote | May 2024 - May 2025</p>
+      <ul>
+        <li>Collaborated with front-end developers and project managers, improving project delivery speed and reducing delays by 15%.</li>
+        <li>Managed Git repositories and conducted structured code reviews, reducing merge conflicts by 30%.</li>
+        <li>Developed scalable Laravel applications, optimizing database queries and improving performance by 30%.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Laravel Intern</h3>
+      <p><strong>InfoCentroid Software Solution, Indore</strong> | Remote | Jan 2024 - May 2024</p>
+      <ul>
+        <li>Assisted in the development of internal tools using Laravel, following MVC principles.</li>
+        <li>Debugged and resolved bugs in legacy PHP code to support live client applications.</li>
+        <li>Integrated MySQL with Laravel Eloquent ORM to create clean and efficient backend services.</li>
+      </ul>
+    </div>
   </section>
 
   <section class="skills" data-aos="fade-up">
@@ -192,16 +226,16 @@
         <div>MySQL</div>
       </div>
       <div class="skill">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-        <div>JavaScript</div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+        <div>Git</div>
       </div>
       <div class="skill">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
         <div>Bootstrap</div>
       </div>
       <div class="skill">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-        <div>Git</div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer" />
+        <div>Composer</div>
       </div>
     </div>
   </section>
@@ -210,19 +244,22 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
       <div class="project-card" data-aos="zoom-in">
-        <img src="https://source.unsplash.com/400x250/?coding,backend" alt="Coding">
-        <h3>Admin Dashboard</h3>
-        <p>Role-based admin panel using Laravel, Livewire, and Bootstrap with full CRUD functionality.</p>
+        <img src="https://source.unsplash.com/400x250/?coding,backend" alt="ERP System">
+        <h3>ERP System</h3>
+        <p>A modular ERP system for inventory and sales, reducing manual input efforts by 40%. Integrated Laravel RBAC via middleware, cutting access errors by 50%. Collaborated effectively with a team to successfully develop and implement the project.</p>
+        <p><a href="https://wedo.ly/login" target="_blank">View Project</a></p>
       </div>
       <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="https://source.unsplash.com/400x250/?api,developer" alt="API">
-        <h3>E-commerce API</h3>
-        <p>Built RESTful APIs in Laravel for a shopping app with JWT authentication and Razorpay integration.</p>
+        <img src="https://source.unsplash.com/400x250/?api,developer" alt="Property Bazar App">
+        <h3>Property Bazar App</h3>
+        <p>Developed a real estate portal with geo-search capabilities, boosting property discovery rates by 60%. Implemented strong authentication mechanisms and data encryption to protect sensitive property listing information.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.propertysbazar&hl=en_IN&pli=1" target="_blank">View Project</a></p>
       </div>
       <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="https://source.unsplash.com/400x250/?web,code" alt="Web App">
-        <h3>Job Casting Panel</h3>
-        <p>Talent and audition platform for casting agents and talents using Laravel and Vue.js.</p>
+        <img src="https://source.unsplash.com/400x250/?web,code" alt="SpicyFeast">
+        <h3>SpicyFeast</h3>
+        <p>Developed a real-time order tracking system using Laravel WebSockets and Google Maps API, improving delivery visibility by 35%. Integrated a WhatsApp chatbot with the Twilio API to automate order notifications, reducing customer support queries by 25%.</p>
+        <p><a href="https://spicyfeast.ca/" target="_blank">View Project</a></p>
       </div>
     </div>
   </section>
@@ -231,7 +268,7 @@
     <h2 class="section-title">Contact</h2>
     <p>📧 Email: <a href="mailto:deepaksinghtomar527@gmail.com">deepaksinghtomar527@gmail.com</a></p>
     <p>📞 Phone: +91 7047782476</p>
-    <p>📍 Location: Gwalior, M.P., India</p>
+    <p>📍 Location: Gwalior, Madhya Pradesh, India</p>
     <p>🌐 Instagram: <a href="https://www.instagram.com/fit_deepak_22/" target="_blank">@fit_deepak_22</a></p>
   </section>
 
